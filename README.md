@@ -36,4 +36,4 @@ Project Purpose
 This project was created strictly for learning and portfolio purposes. It demonstrates my growing frontend development skills and ability to recreate complex, responsive website layouts.
 
 Author
-**Bukola Adeleye**
+**Bukola Stella Adeleye**
