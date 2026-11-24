@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBC Clone</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <div class="header-left">
+
+            <div class="first-part">
+                <a href="#" class="sign-in">
+                    <img src="images/sign-in-icon.png" alt="sign-in" class="user-icon">
+                    <span>Sign in</span>
+                </a>
+            </div>
+
+            <button class="notification" type="button" aria-label="Notifications">
+                <img src="images/notifications-icon.svg" alt="notification">
+            </button>
+
+        </div>
+
+        <div class="header-center">
+            <div class="bbc-logo" aria-label="BBC">
+                <span>B</span>
+                <span>B</span>
+                <span>C</span>
+            </div>
+        </div>
+
+        <div class="divider">|</div>
+
+        <nav class="main-navigation" aria-label="BBC main navigation">
+
+            <button class="close-menu" id="close-menu" type="button" aria-label="Close menu">
+                &times;
+            </button>
+            
+            <div class="navigation-links">
+
+                <a href="#" class="home">Home</a>
+
+                <a href="#" class="main-nav-link news-symbol">
+                    <span class="nav-symbol news-symbol">
+                        <img src="images/news.png" alt="news">
+                    </span>
+                    News
+                </a>
+
+                <a href="#" class="main-nav-link sport-symbol">
+                    <span class="nav-symbol sport-symbol">
+                        <img src="images/sport.png" alt="Sport">
+                    </span>
+                    Sport
+                </a>
+
+                <a href="#" class="main-nav-link weather-symbol">
+                    <span class="nav-symbol weather-symbol">
+                        <img src="images/weather.png" alt="weather">
+                    </span>
+                    Weather
+                </a>
+
+                <a href="#" class="main-nav-link iplayer-symbol">
+                    <span class="nav-symbol iplayer-symbol">
+                        <img src="images/iplayer.png" alt="iplayer">
+                    </span>
+                    iPlayer
+                </a>
+
+                <a href="#" class="main-nav-link sounds-symbol">
+                    <span class="nav-symbol sounds-symbol">
+                        <img src="images/sound.png" alt="Sounds">
+                    </span>
+                    Sounds
+                </a>
+
+                <a href="#" class="main-nav-link bitesize-symbol">
+                    <span class="nav-symbol bitesize-symbol">
+                        <img src="images/bitesize.png" alt="Bitesize">
+                    </span>
+                    Bitesize
+                </a>
+
+            </div>
+
+            <button class="more-dots icon-button" type="button" aria-label="More options">
+                •••
+            </button>
+        </nav>
+
+        <div class="header-right header-mobile-right">
+
+            <button id="hamburger" class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <form class="search-form" id="search-form" role="search">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder=" Search BBC"
+                    aria-label="Search BBC clone">
+            </form>
+        </div>
+    </header>
+    <!--HEADER ENDS-->
+    
+    <h1 class="subhead">Welcome to the BBC</h1>
+    
+    <!--MAIN NEWS STARTS HERE...-->
+    <div class="container">
+        <div class="news-headlines">
+            <h2>
+                <a href="https://www.bbc.co.uk/news">
+                    News headlines
+                    <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                        <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                    </svg>
+                </a>
+            </h2>
+
+            <a href="https://www.bbc.co.uk/news" class="view-more">
+                View more
+            </a>
+        </div>
+
+        <div class="news-section">
+
+        <!--THE BIG IMAGE NEWS-->
+            <div class="main-news">
+                <a href="#" class="news-image">
+                    <img src="images/main-news.png" alt="Main news story">
+                </a>
+
+                <h2 class="main-news-title">
+                    <a href="#">
+                        <span class="live-joined">
+                            <span class="live-icon"></span>
+                            <span class="live-text">LIVE</span>
+                        </span>
+                        Home Secretary Shabana Mahmood to set out changes
+                        to settlement rules for legal migrants
+                    </a>
+                </h2>
+
+                <p class="news-description">
+                    Home Secretary Shabana Mahmood has scrapped plans to make migrant
+                    care workers already in the UK wait 15 years for permanent settlement.
+                </p>
+
+                <div class="main-news-news-location">
+                    <img src="images/news.png" alt="news-logo" class="img-location">
+                    <span>UK</span>
+                </div>
+            </div>
+
+       <!--SECOND COLUMN AFTER THE MAIN NEWS COLUMN-->
+            <div id="second-column">
+                <div class="sub-news">
+                    <a href="#" class="news-image">
+                        <img src="images/subnews1.png" alt="Shop freezers affected by cyber-attack">
+                    </a>
+
+                    <h3 class="news-title">
+                        <a href="#">
+                            Shop freezers in seven European countries
+                            hit by cyber-attack
+                        </a>
+                    </h3>
+
+                    <div class="news-location">
+                        <img src="images/news.png" alt="news-logo" class="img-location">
+                        <span>Europe</span>
+                    </div>
+                </div>
+
+                <div class="sub-news">
+                    <a href="#" class="news-image">
+                        <img src="images/subnews2.png" alt="Explosion and fire">
+                    </a>
+
+                    <h3 class="news-title">
+                        <a href="#">
+                            Investigators face 'daunting' recovery mission
+                            after Florida jet crash killed nine
+                        </a>
+                    </h3>
+
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>US & Canada</span>
+                    </div>
+                </div>
+
+            </div>
+        
+        <!--THIRD COLUMN-->
+            <div id="third-column">
+                <div class="sub-news">
+                    <a href="#" class="news-image">
+                        <img src="images/subnews3.webp" alt="Mother shares her maternity experience">
+                    </a>
+
+                    <h3 class="news-title">
+                        <a href="#">
+                            Mum told to book appointment to give birth to her baby who had died
+                        </a>
+                    </h3>
+
+                    <div class="news-location">
+                        <img src="images/news.png" alt="news-logo" class="img-location">
+                        <span>Tyne</span>
+                    </div>
+                </div>
+                
+                <div class="sub-news">
+
+                    <a href="#" class="news-image">
+                        <img src="images/subnews4.png" alt="Democrat speaking with reporters">
+                    </a>
+
+                    <h3 class="news-title">
+                        <a href="#">
+                            Democrat endorses Republican candidate in 
+                            key Michigan Senate race as party spat erupts
+                        </a>
+                    </h3>
+
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>US & Canada</span>
+                    </div>
+                </div>
+
+            </div>
+
+        <!--FOURTH COLUMN-->
+            <div id="fourth-column">
+                <div class="sub-news">
+                    <h3 class="news-title">
+                        <a href="#">
+                            <span class="video-icon">▶</span>
+                            What Americans are voting for in this election
+                        </a>
+                    </h3>
+
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>US & Canada</span>
+                    </div>
+                </div>
+
+                <div class="sub-news">
+                    <h3 class="news-title">
+                        <a href="#">
+                            Wizz Air flight from Luton makes emergency
+                            landing with fighter jet escort after bomb threat
+                        </a>
+                    </h3>
+
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>UK</span>
+                    </div>
+                </div>
+
+                <div class="sub-news">
+                    <h3 class="news-title">
+                        <a href="#">
+                            Channel 4 documentary and journalists
+                            'poisoned the well'
+                        </a>
+                    </h3>
+
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>UK</span>
+                    </div>
+                </div>
+
+                 <div class="sub-news">
+                    <h3 class="news-title">
+                        <a href="#">
+                            Death toll rises in Ukraine
+                            after Russia attacks aid centre, hospice and hospital
+                        </a>
+                    </h3>
+
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>Europe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="us-elections">
+
+            <div class="elections-heading">
+                <h2>
+                    <a href="#">US midterm elections
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+            </div>
+
+        <!--THE VIDEO STACKS-->
+
+            <div class="video-carousel">
+
+                <button class="arrow-left" type="button">
+                    &#10094;
+                </button>
+
+                <div class="video-track">
+                    
+                    <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/trump.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 1:21</span>
+                            <h3><a href="#">With Congress flipped, what does Trump do next?</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <button class="arrow-right" type="button">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <!--THE FOUR NEWS CARDS-->
+            <div class="election-news-card">
+                <article class="election-news">
+                    <img src="images/feat-1.png" alt="Donald Trump writing on a board">
+                    <h3><a href="#">Anthony Zurcher: Midterm carnage weakens Trump 
+                        but he still wields power for now</a></h3>
+
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>US & Canada</span>
+                    </div>
+                </article>
+
+                <article class="election-news">
+                    <img src="images/feat-2.png" alt="Woman watching election results">
+                    <h3><a href="#">Five reasons why Republicans lost so badly</a></h3>
+                
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>US & Canada</span>
+                    </div>
+                </article>
+
+                <article class="election-news">
+                    <img src="images/feat-3.png" alt="Political candidate greeting supporters">
+                    <h3><a href="#">What Democrats can and can't do with their 
+                        new power after taking Congress</a></h3>
+                
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>US & Canada</span>
+                    </div>
+                </article>
+
+                <article class="election-news">
+                    <img src="images/feat-4.png" alt="Donald Trump outdoors">
+                    <h3><a href="#">Trump's loss limits powers at home, 
+                        but it will likely be different abroad</a></h3>
+                
+                    <div class="news-location">
+                        <img src="images/news.png" alt="" class="img-location">
+                        <span>US & Canada</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="sport-headlines">
+            <div class="sport-heading">
+               <h2>
+                    <a href="#">Sport headlines
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+            </div>
+
+            <div class="sport-news-card">
+                <article class="sport-news">
+                    <img src="images/sportt.png" alt="Football match">
+                    <div class="sport-card-content">
+                        <h3><a href="#">Ronaldo retires from international duty</a></h3>
+                        
+                    <div class="news-location">
+                        <img src="images/sport.png" alt="" class="img-location">
+                        <span>Portugal</span>
+
+                        <img class="comment" src="images/comment.svg" alt="Comments" class="comment-icon">
+                        <span class="comment-number">1351</span>
+                    </div>
+                </article>
+
+                <article class="sport-card">
+                    <img src="images/sporttt.png" alt="Football match">
+                    <div class="sport-card-content">
+                        <h3><a href="#">Ronaldo's most iconic moments as he retires from international football</a></h3>
+                  
+                    <div class="news-location">
+                        <img src="images/sport.png" alt="" class="img-location">
+                        <span>Football</span>
+
+                        <img class="comment" src="images/comment.svg" alt="Comments" class="comment-icon">
+                        <span class="comment-number">166</span>
+                    </div>
+                </article>
+
+                <article class="sport-card">
+                    <img src="images/sportttt.png" alt="Athlete competing">
+                    <div class="sport-card-content">
+                        <h3><a href="#">Former F1 champion Jones dies aged 80</a></h3>
+                        
+                    <div class="news-location">
+                        <img class="comment" src="images/sport.png" alt="" class="img-location">
+                        <span>Formula 1</span>
+                    </div>
+                </article>
+
+                <article class="sport-card">
+                    <img src="images/sporttttt.png" alt="Football players on the pitch">
+                    <div class="sport-card-content">
+                        <h3><a href="#">Kane signs new Bayern contract</a></h3>
+                       
+                    <div class="news-location">
+                        <img src="images/sport.png" alt="" class="img-location">
+                        <span>European Football</span>
+
+                        <img class="comment" src="images/comment.svg" alt="Comments" class="comment-icon">
+                        <span class="comment-number">770</span>
+                    </div>
+                </article>
+
+                <article class="sport-card">
+                    <img src="images/sportttttt.png" alt="Sporting event">
+                    <div class="sport-card-content">
+                        <h3><a href="#">England check on Palmer - what are Tuchel's other big choices?</a></h3>
+                        
+                    <div class="news-location">
+                        <img src="images/sport.png" alt="" class="img-location">
+                        <span>England Men</span>
+
+                        <img class="comment" src="images/comment.svg" alt="Comments" class="comment-icon">
+                        <span class="comment-number">13</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="champions-league">
+            <div class="champions-heading">
+                <h2>
+                    <a href="#">champions League moments
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+            </div>
+
+            <div class="video-carousel">
+
+                <button class="arrow-left" type="button">
+                        &#10094;
+                </button>
+
+                <div class="video-track">
+
+                    <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+
+                     <article class="video-card">
+                        <img src="images/bell.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:30</span>
+                            <h3><a href="#">This Bellingham goal is 'world Class'</a></h3>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="arrow-right" type="button">
+                    &#10095;
+                </button>
+            </div>
+        </section>
+
+        <section class="around-uk">
+            <div class="around-uk-heading">
+                <h2>
+                    <a href="#">
+                        Around the UK
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+
+                
+                <div class="around-uk-subheading">
+                    <p>Stories from England, Scotland, Wales and Northern Ireland</p>
+                    <a href="https://www.bbc.co.uk/news" class="view-more">
+                        View more
+                    </a>
+                </div>
+            </div>
+
+            <div class="around-uk-news-card">
+
+                <article class="uk-news">
+                    <img src="images/Around.png" alt="Stonehenge">
+
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">Altar Stone mystery continues as theory overturned</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Wiltshire</span>
+                            <span class="separator">·</span>
+                            <img src="images/comment.svg" alt="" class="comment">
+                            <span class="comment-number">212</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uk-news">
+                    <img src="images/aroundd.png" alt="School portrait">
+                    
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">Family pay tribute to 'ray of sunshine' daughter killed by bus</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Glasgow & West Scotland</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uk-news">
+                    <img src="images/arounddd.png" alt="Aberfan Memorial Garden">
+
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">Man in court over explosives found near Aberfan Memorial Garden days before Royal visit</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Wales</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uk-news">
+                    <img src="images/aroundddd.png" alt="Royal Mail postbox">
+
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">'Horror' after man finds hundreds of letters found dumped in country road</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Northern Ireland</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uk-news">
+                    <img src="images/arounddddd.png" alt="Regional news locations">
+
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">Find your regional news</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>News</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="entertainment-tv">
+            <div class="entertainment-tv-heading">
+                <h2>
+                    <a href="#">
+                        Entertainment and TV
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+
+                <div class="entertainment-tv-subheading">
+                    <p>Latest news and must-see moments</p>
+
+                    <a href="#" class="view-more">View more</a>
+                </div>
+            </div>
+
+            <div class="entertainment-tv-news-card">
+
+                <article class="entertainment-feature">
+                    <img src="images/ent1.png" alt="Three chefs sitting around a table">
+
+                    <div class="entertainment-feature-content">
+                        <h3>
+                            <a href="#">Ramsay, White and Blumenthal reflect on their rise to the top</a>
+                        </h3>
+
+                        <p>The three chefs came together for a new BBC documentary series.</p>
+
+                        <div class="news-location">
+                            <span>Rise of the Rockstar Chef</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="entertainment-side-news">
+
+                    <article class="entertainment-news">
+                        <img src="images/ent2.png" alt="Film production">
+
+                        <div class="entertainment-news-content">
+                            <h3><a href="#">Surreal moment Tarantino and Kylie Minogue came to my hometown to star in my new film</a></h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                <span>Wales</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="entertainment-news">
+                        <img src="images/ent3.png" alt="Garth Brooks performing">
+
+                        <div class="entertainment-news-content">
+                            <h3><a href="#">Country legend Garth Brooks returns to Belfast with 2027 gigs</a></h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                <span>Northern Ireland</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="entertainment-news">
+                        <img src="images/ent4.png" alt="BBC television presenter">
+
+                        <div class="entertainment-news-content">
+                            <h3><a href="#">BBC presenter's colleagues step up after injury ends running challenge</a></h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                <span>England</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="entertainment-news">
+                        <img src="images/ent5.png" alt="Strictly Come Dancing performers">
+
+                        <div class="entertainment-news-content">
+                            <h3><a href="#">Jaime Winstone to miss this weekend's Strictly due to injury</a></h3>
+
+                            <div class="news-location">
+                                <span>Media Centre</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="entertainment-news">
+                        <img src="images/ent6.png" alt="Brigitte Bardot">
+
+                        <div class="entertainment-news-content">
+                            <h3><a href="#">Brigitte Bardot inheritance row deepens after private letter to partner leaked</a></h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                <span>Europe</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="entertainment-news">
+                        <img src="images/ent7.png" alt="Drummer playing drums">
+
+                        <div class="entertainment-news-content">
+                            <h3><a href="#">Tributes paid to drummer with dozens of number ones</a></h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                <span>Beds, Herts & Bucks</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="blue-planet">
+            <div class="blue-heading">
+                <h2>
+                    <a href="#">Blue Planet III
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+
+                <p class="blue">Watch the first three episodes on iPlayer</p>
+            </div>
+
+            <div class="video-carousel">
+                <button class="arrow-left" type="button">
+                    &#10094;
+                </button>
+
+                <div class="video-track">
+                    
+                    <article class="video-card">
+                        <img src="images/Dolphins.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:48</span>
+                            <h3><a href="#">Dolphins set trap to catch fish</a></h3>
+                        </div>
+                    </article>
+                    
+                    <article class="video-card">
+                        <img src="images/Dolphins.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:48</span>
+                            <h3><a href="#">Dolphins set trap to catch fish</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/Dolphins.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:48</span>
+                            <h3><a href="#">Dolphins set trap to catch fish</a></h3>
+                        </div>
+                    </article>
+                    
+                    <article class="video-card">
+                        <img src="images/Dolphins.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:48</span>
+                            <h3><a href="#">Dolphins set trap to catch fish</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/Dolphins.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:48</span>
+                            <h3><a href="#">Dolphins set trap to catch fish</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/Dolphins.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:48</span>
+                            <h3><a href="#">Dolphins set trap to catch fish</a></h3>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <img src="images/Dolphins.png" alt="Donald Trump speaking">
+                        <div class="video-card-content">
+                            <span class="video-duration">&#9654; 0:48</span>
+                            <h3><a href="#">Dolphins set trap to catch fish</a></h3>
+                        </div>
+                    </article>
+                </div>
+                
+                <button class="arrow-right" type="button">
+                    &#10095;
+                </button>
+            </div>
+        </section>
+
+        <section class="food-recipes">
+            <div class="food-recipes-heading">
+                <h2>
+                    <a href="#">
+                        Food and recipes
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+
+                <a href="#" class="view-more">View more</a>
+            </div>
+
+            <div class="food-recipes-news">
+
+                <article class="food-feature">
+                    <img src="images/foood.png" alt="Sausage and potato dish">
+
+                    <div class="food-feature-content">
+                        <h3>
+                            <a href="#">Brilliant banger recipes for Bonfire Night</a>
+                        </h3>
+
+                        <p>These sausage recipes will satisfy everyone coming in from the cold.</p>
+
+                        <div class="news-location">
+                            <span>Food</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="food-side-news">
+
+                    <article class="food-news">
+                        <img src="images/foood2.png" alt="Sausage rolls and snacks">
+
+                        <div class="food-news-content">
+                            <h3>
+                                <a href="#">Snacks that might just upstage the fireworks</a>
+                            </h3>
+
+                            <div class="news-location">
+                                <span>Food</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-news">
+                        <img src="images/foood3.png" alt="Bananas">
+
+                        <div class="food-news-content">
+                            <h3>
+                                <a href="#">Could your diet be ageing your skin? What the evidence says</a>
+                            </h3>
+
+                            <div class="news-location">
+                                <span>Food</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-news">
+                        <img src="images/foood4.png" alt="Restaurant worker">
+
+                        <div class="food-news-content">
+                            <h3>
+                                <a href="#">Restaurants sceptical over 'garlic and gherkins' plan</a>
+                            </h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                <span>Manchester</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-news">
+                        <div class="food-video-image">
+                            <img src="images/foood5.png" alt="Biscuit being dipped into tea">
+                        </div>
+
+                        <div class="food-news-content">
+                            <h3>
+                                <a href="#">It's 1998 and scientists say they've cracked how long to dunk a biscuit</a>
+                            </h3>
+
+                            <div class="news-location">
+                                <span>Archive</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="health">
+
+            <div class="health-heading">
+                <h2>
+                    <a href="#">
+                        Health and Wellbeing
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+                <a href="#" class="view-more">View more</a>
+            </div>
+
+            <div class="health-news">
+
+                <article class="health-feature">
+                    <img src="images/health1.png" alt="Restaurant worker">
+
+                    <div class="health-feature-content">
+                        <h3>
+                            <a href="#">Biggest fibre boost could be scraps in your bin, experts say</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                                <span>Health</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="health-side-news">
+
+                    <article class="health-news">
+                        <img src="images/health2.png" alt="Restaurant worker">
+
+                        <div class="health-news-content">
+                            <h3>
+                                <a href="#">Is 'ferritin face' a real thing - and can you really spot low iron from looks</a>
+                            </h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                    <span>Health</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="health-news">
+                        <img src="images/health3.png" alt="Restaurant worker">
+
+                        <div class="health-news-content">
+                            <h3>
+                                <a href="#">Which viruses should we be worried about this winter?</a>
+                            </h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                    <span>Morning Live</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="health-news">
+                        <img src="images/health4.png" alt="Restaurant worker">
+
+                        <div class="health-news-content">
+                            <h3>
+                                <a href="#">Woman's siesta a day' credited for long life</a>
+                            </h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                    <span>Wiltshire</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="health-news">
+                        <img src="images/health5.png" alt="Restaurant worker">
+
+                        <div class="health-news-content">
+                            <h3>
+                                <a href="#">How to keep pets safe during fireworks</a>
+                            </h3>
+
+                            <div class="news-location">
+                                <img src="images/news.png" alt="" class="img-location">
+                                    <span>Newsround</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="money">
+            <div class="money-heading">
+                <h2><a href="#">Money
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+                <a href="#" class="view-more">View more</a>
+            </div>
+
+            <div class="money-news-card">
+
+                <article class="money-news">
+                    <img src="images/money.png" alt="British pound notes and coins">
+                    <div class="money-news-content">
+                        <h3><a href="#">Pound rises to its highest level since the Brexit referendum</a></h3>
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Business</span>
+                            <span class="separator">·</span>
+                            <img src="images/comment.svg" alt="" class="comment">
+                            <span class="comment-number">1356</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="money-news">
+                    <img src="images/moneyy.png" alt="Woman sitting at a computer">
+                    <div class="money-news-content">
+                        <h3><a href="#">'Quiet quitting' could be hitting the economy - here's why</a></h3>
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Business</span>
+                            <span class="separator">·</span>
+                            <img src="images/comment.svg" alt="" class="comment">
+                            <span class="comment-number">1683</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="money-news">
+                    <img src="images/moneyyy.png" alt="Woman collecting items from a bin">
+                    <div class="money-news-content">
+                        <h3><a href="#">From scooters to shampoo - the people saving hundreds from dumpster diving</a></h3>
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Business</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="money-news">
+                    <img src="images/moneyyyy.png" alt="Laptop displaying Black Friday">
+                    <div class="money-news-content">
+                        <h3><a href="#">When is Black Friday and why does the UK have it?</a></h3>
+                        <div class="news-location">
+                            <img src="images/bitesize.png" alt="" class="img-location">
+                            <span>Bitesize</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="money-news">
+                    <img src="images/moneyyyyy.png" alt="Parents being interviewed">
+                    <div class="money-news-content">
+                        <h3><a href="#">Parents fined for employing teen son in food trailer</a></h3>
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Hampshire & Isle of Wight</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+       
+        <section class="uplifting-stories">
+
+            <div class="uplifting-heading">
+                <h2>Uplifting stories</h2>
+            </div>
+
+            <div class="uplifting-news-card">
+
+                <article class="uplifting-news">
+                    <img src="images/upli.png" alt="Anglers holding a large carp">
+                    <div class="uplifting-news-content">
+                        <h3><a href="#">Angler's 52kg carp catch hailed as world record</a></h3>
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Lancashire</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uplifting-news">
+                    <img src="images/uplii.png" alt="Old padlock and gold coins">
+                    <div class="uplifting-news-content">
+                        <h3><a href="#">Code cracked for shipwreck padlock solving 400-year-old mystery</a></h3>
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Wales</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uplifting-news">
+                    <img src="images/upliii.png" alt="Woman riding a horse through a restaurant">
+                    <div class="uplifting-news-content">
+                        <h3><a href="#">'I rode a horse through the Wychbold McDonald's'</a></h3>
+                        <div class="news-location">
+                            <img src="images/sound.png" alt="" class="img-location">
+                            <span>Sounds</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uplifting-news">
+                    <img src="images/upliiii.png" alt="Colourful fireworks in the night sky">
+                    <div class="uplifting-news-content">
+                        <h3><a href="#">Five fascinating facts about the 2,000-year history of fireworks</a></h3>
+                        <div class="news-location">
+                            <img src="images/bitesize.png" alt="" class="img-location">
+                            <span>Bitesize</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="discover">
+            <div class="discover-heading">
+                <h2>Discover more to watch and listen to</h2>
+            </div>
+
+            <div class="discover-news">
+                <article class="discover-feature">
+                    <img src="images/dis1.png" alt="The Royle Family">
+
+                    <div class="discover-feature-content">
+                        <h3>
+                            <a href="#">Festive classics for those who can't wait</a>
+                        </h3>
+
+                        <p>Join the Royles and many more on BBC iPlayer</p>
+                        <div class="discover-category">
+                            <img src="images/iplayer.png" alt="" class="img-location">
+                            <span>iPlayer</span>
+                            <span class="discover-plus">+</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="discover-side-news">
+                    <article class="discover-card">
+                        <img src="images/dis2.png" alt="Highland Cops">
+
+                        <div class="discover-card-content">
+                            <h3>
+                                <a href="#">The Highland Cops return to work in breathtaking landscapes</a>
+                            </h3>
+
+                            <div class="discover-category">
+                                <img src="images/iplayer.png" alt="" class="img-location">
+                                <span>iPlayer</span>
+                                <span class="discover-plus">+</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="discover-card">
+                        <img src="images/dis3.png" alt="Tell Me I'm Wrong">
+                        <div class="discover-card-content">
+                            <h3>
+                                <a href="#">Who should replace Maya Jama on Love Island?</a>
+                            </h3>
+
+                            <div class="discover-category">
+                                <img src="images/sound.png" alt="" class="img-location">
+                                <span>Sounds</span>
+                                <span class="discover-plus">+</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="discover-card">
+                        <img src="images/dis4.png" alt="Inside Chernobyl's Mega Tomb">
+                        <div class="discover-card-content">
+                            <h3>
+                                <a href="#">The mammoth effort to entomb the ruins of the Chernobyl nuclear power plant</a>
+                            </h3>
+                            <div class="discover-category">
+                                <img src="images/iplayer.png" alt="" class="img-location">
+                                <span>iPlayer</span>
+                                <span class="discover-plus">+</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="discover-card">
+                        <img src="images/dis5.png" alt="Antisocial with Adam Fleming">
+                        <div class="discover-card-content">
+                            <h3>
+                                <a href="#">What is "hobby-maxxing" and can a hobby become too much?</a>
+                            </h3>
+
+                            <div class="discover-category">
+                                <img src="images/sound.png" alt="" class="img-location">
+                                <span>Sounds</span>
+                                <span class="discover-plus">+</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="around-uk">
+            <div class="around-uk-heading">
+                <h2>
+                    <a href="#">
+                        Around the UK
+                        <svg viewBox="0 0 32 32" width="0.7em" height="0.6em" focusable="false" aria-hidden="true">
+                            <path d="M21.6 14.3 5.5 31h6.4l14.6-15L11.9 1H5.5l16.1 16.7z"></path>
+                        </svg>
+                    </a>
+                </h2>
+
+                
+                <div class="around-uk-subheading">
+                    <p>Stories from England, Scotland, Wales and Northern Ireland</p>
+                    <a href="https://www.bbc.co.uk/news" class="view-more">
+                        View more
+                    </a>
+                </div>
+            </div>
+
+            <div class="around-uk-news-card">
+
+                <article class="uk-news">
+                    <img src="images/Around.png" alt="Stonehenge">
+
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">Altar Stone mystery continues as theory overturned</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Wiltshire</span>
+                            <span class="separator">·</span>
+                            <img src="images/comment.svg" alt="" class="comment">
+                            <span class="comment-number">212</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uk-news">
+                    <img src="images/aroundd.png" alt="School portrait">
+                    
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">Family pay tribute to 'ray of sunshine' daughter killed by bus</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Glasgow & West Scotland</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uk-news">
+                    <img src="images/arounddd.png" alt="Aberfan Memorial Garden">
+
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">Man in court over explosives found near Aberfan Memorial Garden days before Royal visit</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Wales</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uk-news">
+                    <img src="images/aroundddd.png" alt="Royal Mail postbox">
+
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">'Horror' after man finds hundreds of letters found dumped in country road</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>Northern Ireland</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="uk-news">
+                    <img src="images/arounddddd.png" alt="Regional news locations">
+
+                    <div class="uk-news-content">
+                        <h3>
+                            <a href="#">Find your regional news</a>
+                        </h3>
+
+                        <div class="news-location">
+                            <img src="images/news.png" alt="" class="img-location">
+                            <span>News</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-bbc">
+
+            <div class="bbc-regions">
+                <a href="#" class="region">
+                    <img src="images/bbclogo1.jpg" alt="BBC Scotland">
+                    <span>Scotland</span>
+                </a>
+
+                <a href="#" class="region">
+                    <img src="images/bbclogo2.jpg" alt="BBC ALBA">
+                    <span>ALBA</span>
+                </a>
+
+                <a href="#" class="region">
+                    <img src="images/bbclogo3.jpg" alt="BBC Wales">
+                    <span>Wales</span>
+                </a>
+
+                <a href="#" class="region">
+                    <img src="images/bbclogo3.jpg" alt="BBC Cymru">
+                    <span>Cymru</span>
+                </a>
+
+                <a href="#" class="region">
+                    <img src="images/bbclogo4.png" alt="BBC Northern Ireland">
+                    <span>NI</span>
+                </a>
+            </div>
+
+            <div class="about-links get">
+                <h2>Get support</h2>
+                <a href="#">Find BBC Action Lines</a>
+                <a href="#">Action Lines for young people</a>
+                <a href="#">Get help receiving TV, radio or digital services</a>
+            </div>
+
+            <div class="about-links">
+                <h2>About the BBC</h2>
+                <a href="#">Mission, values and public purposes</a>
+                <a href="#">What we do</a>
+                <a href="#">Modern slavery statement</a>
+            </div>
+        </section>  
+        
+        <section class="bbc-sounds">
+            <div class="sounds">
+                <h2 class="soundss">Best of BBC Sounds</h2>
+
+                <div class="sounds-layout">
+
+                    <article class="sound-card">
+                        <img src="images/bsound1.png"
+                            alt="Swimmer competing in a pool"
+                            class="card-image">
+                        
+                        <div class="card-content">
+                            <a href="#">
+                                <h3>What are the International Island Games?</h3>
+                            </a>
+
+                            <p class="sound-label">
+                                <span class="sound-icon"><img src="images/sounds.png" alt="" class="img-sound"></span>
+                            Sounds</p>
+
+                            <button class="subscribe-btn" type="button">
+                                <span aria-hidden="true"><img src="images/sub-Photoroom.png" alt="subscribe"></span>
+                                Subscribe 
+                            </button>    
+                        </div>
+                    </article>
+
+                    <article class="sound-card">
+                        <img
+                            src="images/bsound2.png"
+                            alt="All in the Mind programme artwork"
+                            class="card-image">
+
+                        <div class="card-content">
+                            <a href="#">
+                                <h3>The research linking exercise and mental health</h3>
+                            </a>
+
+                            <p class="sound-label">
+                            <span class="sound-icon"><img src="images/sounds.png" alt="" class="img-sound"></span>
+                            Sounds</p> 
+
+                            <button class="subscribe-btn" type="button">
+                            <span aria-hidden="true"><img src="images/sub-Photoroom.png" alt="subscribe"></span>
+                            Subscribe</button>
+                        </div>
+                    </article>
+
+                    <article class="sound-card">
+                        <img
+                            src="images/bsound3.png"
+                            alt="Boxers facing each other"
+                            class="card-image">
+                        
+                        <div class="card-content">
+                            <a href="#">
+                                <h3>Revisit the origins of boxing's defining rivalry</h3>
+                            </a>
+
+                            <p class="sound-label">
+                            <span class="sound-icon"><img src="images/sounds.png" alt="" class="img-sound"></span>
+                            Sounds</p>
+
+                            <button class="subscribe-btn" type="button">
+                            <span aria-hidden="true"><img src="images/sub-Photoroom.png" alt="subscribe"></span>
+                            Subscribe</button>
+                        </div>
+                    </article>
+
+                    <article class="sound-card">
+                        <img
+                            src="images/bsound4.png"
+                            alt="Just One Thing programme artwork"
+                            class="card-image">
+
+                        <div class="card-content">
+                            <a href="#">
+                                <h3>How skipping could benefit your health and wellbeing</h3>
+                            </a>
+
+                            <p class="sound-label">
+                            <span class="sound-icon"><img src="images/sounds.png" alt="" class="img-sound"></span>
+                            Sounds </p>
+
+                            <button class="subscribe-btn" type="button">
+                            <span aria-hidden="true"><img src="images/sub-Photoroom.png" alt="subscribe"></span>
+                            Subscribe</button> 
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bbc-footer">
+            <div class="footer-container">
+
+                <nav class="footer-main-nav" aria-label="BBC main footer navigation">
+
+                    <div class="footer-nav-column">
+                        <a href="#">Home</a>
+                        <a href="#">News</a>
+                    </div>
+
+                    <div class="footer-nav-column">
+                        <a href="#">Sport</a>
+                        <a href="#">Weather</a>
+                    </div>
+
+                    <div class="footer-nav-column">
+                        <a href="#">iPlayer</a>
+                        <a href="#">Sounds</a>
+                    </div>
+
+                    <div class="footer-nav-column">
+                        <a href="#">Bitesize</a>
+                        <a href="#">CBBC</a>
+                    </div>
+
+                    <div class="footer-nav-column">
+                        <a href="#">CBeebies</a>
+                        <a href="#">Food</a>
+                    </div>
+
+                </nav>
+
+                <nav class="footer-second-nav" aria-label="BBC information links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">About the BBC</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Accessibility Help</a>
+                    <a href="#">Parental Guidance</a>
+                    <a href="#">Contact the BBC</a>
+                    <a href="#">Make an editorial complaint</a>
+                    <a href="#">Careers</a>
+                    <a href="#">BBC emails for you</a>
+                </nav>
+
+                <p class="copyright">
+                    Copyright © 2026 BBC. The BBC is not responsible for the content
+                    of external sites.
+                    <a href="#">Read about our approach to external linking.</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
